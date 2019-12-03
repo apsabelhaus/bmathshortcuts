@@ -1,0 +1,97 @@
+%%Identification
+%%The package identifies itself and the LaTeX version needed
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bmathshortcuts}[2019/11/18 bmathshortcuts, a package containing common bold math shortcuts and other misc math macros.]
+
+% Required packages: all related to math symbols.
+\RequirePackage{amsfonts}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools} % this is needed for the \vcentcolon in \defeq
+\RequirePackage{bm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%       MATH SHORTCUTS     %%%%%%%%%%%%%%%
+
+% We use a lot of bolding, overdots, etc. many times.
+% I've typed \mathbf{} way to many times to not be frustrated.
+% Here are some commands to shorthand it.
+\newcommand{\bzero}{\mathbf{0}} % bold zero
+\newcommand{\bOnes}{\mathbf{1}} % bold ones vector
+\newcommand{\bA}{\mathbf{A}} % bold capital A
+\newcommand{\ba}{\mathbf{a}} % bold a
+\newcommand{\bB}{\mathbf{B}} % bold capital B
+\newcommand{\boldb}{\mathbf{b}} % bold b. Note, \bb seems to be part of the ASME template, so had to choose differently here.
+\newcommand{\bC}{\mathbf{C}} % bold capital C
+\newcommand{\bc}{\mathbf{c}} % bold c
+\newcommand{\bD}{\mathbf{D}} % bold capital D
+\newcommand{\bd}{\mathbf{d}} % bold d
+\newcommand{\bE}{\mathbf{E}} % bold capital E
+\newcommand{\be}{\mathbf{e}} % bold e
+\newcommand{\bF}{\mathbf{F}} % bold capital F
+\newcommand{\btF}{\mathbf{\widetilde F}} % bold capital F with tilde
+\newcommand{\boldf}{\mathbf{f}} % bold little f
+\newcommand{\boldtf}{\mathbf{\widetilde f}} % bold little f with a tilde
+\newcommand{\bG}{\mathbf{G}} % bold capital G
+\newcommand{\btG}{\mathbf{\widetilde G}} % bold G with a wide tilde
+\newcommand{\bg}{\mathbf{g}} % bold g
+\newcommand{\bH}{\mathbf{H}} % bold capital H
+\newcommand{\bh}{\mathbf{h}} % bold h
+\newcommand{\bI}{\mathbf{I}} % bold capital I
+\newcommand{\bJ}{\mathbf{J}} % bold capital J
+\newcommand{\bK}{\mathbf{K}} % bold capital K
+\newcommand{\bL}{\mathbf{L}} % bold capital L
+\newcommand{\bell}{\bm{\ell}} % bold ell
+\newcommand{\bM}{\mathbf{M}} % bold capital M
+\newcommand{\bn}{\mathbf{n}} % bold n
+\newcommand{\bp}{\mathbf{p}} % bold p
+\newcommand{\bQ}{\mathbf{Q}} % bold capital Q
+\newcommand{\sbQ}{\bm{Q}} % bold slanted Q
+\newcommand{\btQ}{\mathbf{\widetilde Q}} % bold Q with wide tilde
+\newcommand{\bq}{\mathbf{q}} % bold q
+\newcommand{\sbq}{\bm{q}} % slanted bold q.
+\newcommand{\dsbq}{\dot{\bm{q}}} % dot slanted bold q.
+\newcommand{\dq}{\dot q} % little, normal font q with an overdot
+\newcommand{\dbq}{\dot{\mathbf{q}}} % dot bold q
+% \newcommand{\sq}{\mathsf{q}} % sans-serif lowercase q. Originally included but it's hard to read, and is easy to make typos with \sbq, etc.
+% \newcommand{\dsq}{\dot{\mathsf{q}}} % dot sans serif q, removed for the same reason as \dsq
+\newcommand{\bR}{\mathbf{R}} % bold capital R
+\newcommand{\btR}{\mathbf{\widetilde R}} % bold R with wide tilde
+\newcommand{\br}{\mathbf{r}} % bold r
+\newcommand{\bS}{\mathbf{S}} % bold capital S
+\newcommand{\bolds}{\mathbf{s}} % bold s
+\newcommand{\bT}{\mathbf{T}} % bold capital T
+\newcommand{\bt}{\mathbf{t}} % bold t
+\newcommand{\bU}{\mathbf{U}} % bold capital U
+\newcommand{\bu}{\mathbf{u}} % bold u
+\newcommand{\btu}{\mathbf{\widetilde u}} % bold u with tilde
+\newcommand{\bv}{\mathbf{v}} % bold v
+\newcommand{\bW}{\mathbf{W}} % bold capital W
+\newcommand{\bw}{\mathbf{w}} % bold w
+\newcommand{\bX}{\mathbf{X}} % bold capital X
+\newcommand{\bx}{\mathbf{x}} % bold x
+\newcommand{\dbx}{\dot{\mathbf{x}}} % dot bold x
+\newcommand{\bY}{\mathbf{Y}} % bold capital Y
+\newcommand{\by}{\mathbf{y}} % bold y 
+\newcommand{\bZ}{\mathbf{Z}} % bold capital Z
+\newcommand{\bz}{\mathbf{z}} % bold z
+% Greek letters:
+\newcommand{\bkappa}{\bm{\kappa}} % bold kappa
+\newcommand{\bKappa}{\bm{\varkappa}} % bold funny italic kappa
+\newcommand{\brho}{\bm{\rho}} % bold little rho
+\newcommand{\bomega}{\bm{\omega}} % bold little omega
+\newcommand{\balpha}{\bm{\alpha}} % bolt little alpha
+\newcommand{\bxi}{\bm{\xi}} % bold xi
+\newcommand{\bsigma}{\bm{\sigma}} % bold sigma
+\newcommand{\dvareps}{\dot{\varepsilon}} % derivative of the var epsilon
+\newcommand{\boldeta}{\bm{\eta}} % bold eta
+
+% Some other global commands:
+\newcommand{\defeq}{\vcentcolon=} % "defined as"
+
+%%%%%%%%%%%%%%%%%%   END MATH SHORTCUTS      %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
